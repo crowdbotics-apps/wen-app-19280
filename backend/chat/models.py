@@ -54,6 +54,7 @@ class ForwardedMessage(models.Model):
         related_name="forwardedmessage_forwarded_to",
     )
     timestamp_forwarded = models.DateTimeField(auto_now_add=True,)
+    renatus = models.BigIntegerField(null=True, blank=True,)
 
 
 class ThreadAction(models.Model):

@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .viewsets import VerificationCodeViewSet, ProfileViewSet, ContactViewSet
+from .viewsets import ContactViewSet, ProfileViewSet, VerificationCodeViewSet
 
 router = DefaultRouter()
 router.register("verificationcode", VerificationCodeViewSet)
